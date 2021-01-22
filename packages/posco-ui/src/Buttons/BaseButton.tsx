@@ -8,7 +8,7 @@ type BaseButtonProps = {
 
 const BaseButton = (props: BaseButtonProps) => {
 	const { text, onClickHandler } = props;
-	return <S.BaseButton onClick={onClickHandler}>{text}</S.BaseButton>;
+	return <S.BaseButton onClick={onClickHandler}>ss{text}</S.BaseButton>;
 };
 
 export default BaseButton;

@@ -34,7 +34,7 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var S = __importStar(require("./styled"));
 var BaseButton = function (props) {
     var text = props.text, onClickHandler = props.onClickHandler;
-    return jsx_runtime_1.jsx(S.BaseButton, __assign({ onClick: onClickHandler }, { children: text }), void 0);
+    return jsx_runtime_1.jsxs(S.BaseButton, __assign({ onClick: onClickHandler }, { children: ["ss", text] }), void 0);
 };
 exports.default = BaseButton;
 //# sourceMappingURL=BaseButton.js.map

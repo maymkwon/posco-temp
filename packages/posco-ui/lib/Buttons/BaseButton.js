@@ -6,7 +6,7 @@ var BaseButton = function BaseButton(props) {
       onClickHandler = props.onClickHandler;
   return /*#__PURE__*/React.createElement(S.BaseButton, {
     onClick: onClickHandler
-  }, text);
+  }, "ss", text);
 };
 
 export default BaseButton;

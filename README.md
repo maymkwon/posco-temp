@@ -18,3 +18,17 @@ cd packages/<목적지>
     "build:storybook": "build-storybook -c .storybook -o dist/ --quiet"
   },
 ```
+
+
+프로젝트 내 **로컬** 패키지 설치
+```
+lerna add <설치할 로컬 패키지 이름> --scope=<설치할 위치>
+```
+
+
+프로젝트 내 패키지 설치
+
+목적지 경로에서 ex) cd apps/posco-admin
+```
+yarn add <패키지 이름> -W <-D>
+```
