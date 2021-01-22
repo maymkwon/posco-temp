@@ -4,6 +4,7 @@
   "main": "index.js",
   "repository": "https://github.com/maymkwon/posco-temp.git",
   "author": "maymkwon <may.m.kwon@gmail.com>",
+  "private": true,
   "license": "MIT",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.14.0",
