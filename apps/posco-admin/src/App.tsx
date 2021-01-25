@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import { FlexBox } from '@posco/ui/lib/boxes';
 function App() {
 	return (
 		<div className="App">
@@ -10,7 +10,10 @@ function App() {
 				<p>
 					Edit <code>src/App.tsx</code> and save to reload.
 				</p>
-				test
+				<FlexBox>
+					<div>aaa</div>
+					<div>bbb</div>
+				</FlexBox>
 				<a
 					className="App-link"
 					href="https://reactjs.org"
