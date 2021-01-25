@@ -10,7 +10,7 @@
             "es2017",
             "dom"
         ],
-        "sourceMap": true,
+        "sourceMap": false,
         "allowJs": false,
         "jsx": "react-jsx",
         "moduleResolution": "node",
@@ -29,7 +29,7 @@
         "allowSyntheticDefaultImports": true,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-        "esModuleInterop": true
+        "esModuleInterop": true,
     },
     "include": [
         "src/**/*"

@@ -2,28 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { FlexBox } from '@posco/ui/lib/boxes';
+import { GlobalTemplate } from '@posco/ui/lib/templates';
 function App() {
 	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.tsx</code> and save to reload.
-				</p>
-				<FlexBox>
-					<div>aaa</div>
-					<div>bbb</div>
-				</FlexBox>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Learn React
-				</a>
-			</header>
-		</div>
+		<GlobalTemplate
+			header={<div>header</div>}
+			menu={<div>menu</div>}
+			contents={<div>contents</div>}
+		/>
 	);
 }
 
