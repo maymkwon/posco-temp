@@ -1,14 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { FlexBox } from '@posco/ui/lib/boxes';
-import { GlobalTemplate } from '@posco/ui/lib/templates';
+import { GlobalTemplate } from '@posco/ui/lib/Templates';
+import styled from 'styled-components';
+
+const ColorBox = styled.div<{ color: string }>`
+	background-color: ${({ color }) => color};
+`;
+
 function App() {
 	return (
 		<GlobalTemplate
-			header={<div>header</div>}
-			menu={<div>menu</div>}
-			contents={<div>contents</div>}
+			header={<ColorBox color="red">header</ColorBox>}
+			menu={<ColorBox color="blue">menu</ColorBox>}
+			contents={<ColorBox color="pink">contents</ColorBox>}
 		/>
 	);
 }
