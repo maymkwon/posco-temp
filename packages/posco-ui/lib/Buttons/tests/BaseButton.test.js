@@ -5,11 +5,9 @@ var clickFn = jest.fn();
 describe('Button', function () {
   it('should simulate click', function () {
     var component = mount( /*#__PURE__*/React.createElement(BaseButton, {
-      onClickHandler: clickFn,
-      text: "Hello"
-    }));
+      onClickHandler: clickFn
+    }, "Hello"));
     component.find(BaseButton).simulate('click');
     expect(clickFn).toHaveBeenCalled();
   });
 });
-//# sourceMappingURL=BaseButton.test.js.map
